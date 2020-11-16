@@ -8,11 +8,8 @@
   max-width: 1176px;
   margin: 0 auto;
 }
-.clearfix {
-  content: ""; 
-  display: block;
-  clear: both;
-}
+
+/* Common */
 .tit,
 .sub-tit { font-family: 'Roboto', sans-serif; }
 .tit {
@@ -35,6 +32,24 @@
   left: 0;
   text-indent: -9999em;
 }
+
+/* Skip */
+#skip {
+  position: relative;
+  z-index: 999;
+}
+#skip a {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  padding: 5px 7px;
+  border: 1px solid #0093bd;
+  background-color: #fff;
+  color: #191919;
+  z-index: 100;
+}
+#skip a:focus,
+#skip a:active { top: 0; }
 
 /* Header */
 .header {
@@ -150,7 +165,7 @@
 .swiper-slide .description,
 .swiper-slide .btn {
   position: absolute;
-  left: 350px;
+  left: 450px;
   display: block;
   text-align: left;
   color: #fff;
